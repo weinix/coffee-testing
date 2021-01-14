@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk14-openj9:x86_64-alpine-jre-14_36.1_openj9-0.19.0
 
-RUN apk add curl
+RUN apk add curl telnet
 
 COPY target/lib/* /deployments/lib/
 COPY target/*-runner.jar /deployments/app.jar
